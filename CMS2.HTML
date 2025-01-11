@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMS Dashboard</title>
-    <link rel="STYLESHEET"href="CMS2.CSS">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS Dashboard</title>
+  <link rel="stylesheet" href="CMS2.CSS">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <div class="dashboard">
-        <div class="sidebar">
-            <div class="menu-toggle">
-               <span>|||</span> 
-            </div>
-            <div class="sidebar-content">
-                <ul>
-                    <li>PROFILE</li>
-                    <li>LANGUAGE</li>
-                    <li>LIBRARY</li>
-                    <li>NOTIFICATION</li>
-                    <li>HELP</li>
-                    <li>ABOUT</li>
-                    <li>LOGOUT</li>
-                </ul>
-            </div> 
+  <div class="dashboard">
+    <!-- Sidebar Section -->
+    <div class="menu-wrapper">
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="sidebar">
+        <div class="sidebar-content">
+          <ul><br><br><br>
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#language">LANGUAGE</a></li>
+            <li><a href="#library">LIBRARY</a></li>
+            <li><a href="#notification">NOTIFICATION</a></li>
+            <li><a href="#help">HELP</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#logout">LOGOUT</a></li>
+          </ul>
         </div>
-        <div class="main-dash">
-            <h1>KCC INSTITUTE OF TECHNOLOGY AND MANAGEMENT</h1>
-            <H3>Session(2024-25)</H3>
-            <div class="grid-container">
-                <div class="BOX" id="b1"><p>STUDENT DETAILS</p></div>              
-                <div class="BOX"id="b2"><p>TEACHER DETAILS</p></div>               
-                <div class="BOX"id="b3"><p>CAMPUS</p></div>             
-                <div class="BOX"id="b4"><p>LIBRARY</p></div>                
-                <div class="BOX"id="b5"><p>FEE STRUCTURE</p></div>                
-                <div class="BOX"id="b6"><p>COURSES</p></div>              
-            </div>
-    </div> 
+      </nav>
     </div>
+
+    <!-- Main Dashboard Content -->
+    <main class="main-dash">
+      <header>
+        <h1>KCC Institute of Technology and Management</h1>
+        <h3>Session (2024-25)</h3>
+      </header>
+      <section class="grid-container">
+        <div class="box" id="b1"><p>Student Details</p></div>
+        <div class="box" id="b2"><p>Teacher Details</p></div>
+        <div class="box" id="b3"><p>Campus</p></div>
+        <div class="box" id="b4"><p>Library</p></div>
+        <div class="box" id="b5"><p>Fee Structure</p></div>
+        <div class="box" id="b6"><p>Courses</p></div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

@@ -1,67 +1,98 @@
-*{
-    text-align: center;
-    font-family: arial,sans-serif;
-    margin: 0px;
-    padding: 0%;
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-body{
-    background-color: #f4f4f4;
-    background-image: url(WhatsApp\ Image\ 2025-01-10\ at\ 20.26.19_f0c9de4c.jpg);
-    background-repeat: no-repeat;
+
+body {
+    background-color: #f3f4f6;
+    background-image: url(BackgroundCMS.jpg);
     background-size: cover;
-}
-.upper{
-    margin: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12%;
+    height: 100vh;
+    margin: 0;
 }
-h1{
-    margin-bottom: 30px;
-    margin-top: 20px;
-    font-size: 30px;
-    color: #333;
-    font-weight: 700;
-    font-style: initial;
-}
-.login{
-    background-color: white;
-    align-items: center;
-    height: 300px;
-    width: 350px;
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    align-items: center; 
 }
-h4{
-    margin-top: 20px;
-    font-size: 22px;
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
     color: #333;
-    text-align: left;
 }
-input{
-    text-align: left;
-    font-size: 19px;
-    padding: 3px;
-    border: 1px solid #ccc;
+
+p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
 }
-button{
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
     padding: 10px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white ;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
-button:hover{
-    background-color: #0056b3;
+
+input:focus {
+    border-color: #6a11cb;
 }
-button:active{
-    transition: button 3s ease;
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.signup-text a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.signup-text a:hover {
+    color: #2575fc;
 }
