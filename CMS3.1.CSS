@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+}
+body{
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 800PX;
+    max-width: 100%;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form-group{
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input,button{
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input:focus{
+    border-color: #007bff;
+    outline: none;
+}
+.gender-opt{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.btn{
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.btn:hover{
+    background: #0056b3;
+}
+.search-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+thead{
+    background: #007bff;
+    color: #fff;
+}
+th,td{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid black;
+}
+tbody tr:nth-child(even){
+    background: #f2f2f2;
+}
