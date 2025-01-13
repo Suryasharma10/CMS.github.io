@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Registration</title>
+    <link rel="stylesheet" href="CMS_register.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h1>College Management System</h1>
+        <h2>Student Registration Form</h2>
+        <form action="your_server_endpoint" method="POST">
+            <!-- Full Name -->
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Course -->
+            <label for="course">Select Course</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Choose a course</option>
+                <option value="btech">B.Tech</option>
+                <option value="bba">BBA</option>
+                <option value="bca">BCA</option>
+                <option value="mba">MBA</option>
+            </select>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

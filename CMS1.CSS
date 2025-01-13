@@ -1,98 +1,84 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{
+    text-align: center;
+    font-family: arial,sans-serif;
+    margin: 0px;
+    padding: 0%;
 }
-
-body {
-    background-color: #f3f4f6;
-    background-image: url(BackgroundCMS.jpg);
+body{
+    background-color: #f4f4f4;
+    background-image: url(WhatsApp\ Image\ 2025-01-10\ at\ 20.26.19_f0c9de4c.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+}
+.upper{
+    margin: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    margin-top: 12%;
 }
-
-.container {
-    width: 100%;
-    max-width: 400px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+h1{
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-size: 40px;
+    color: #333;
+    font-weight: 800;
+    font-style: initial;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-weight:lighter;
     text-align: center;
 }
-
-h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+.login{
+    background-color: rgb(252, 251, 251);
+    align-items: center;
+    height: 400px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 9px;
+    text-align: center;
+    align-items: center; 
+}
+h4{
+    margin-top: 25px;
+    font-size: 16px;
     color: #333;
-}
-
-p {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
     text-align: left;
-    margin: 10px 0 5px;
-    font-size: 0.9rem;
-    color: #333;
+    margin-bottom: 5px;
 }
-
-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 20px;
+input{
+    text-align: left;
+    font-size: 19px;
+    padding: 7px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
+    width: 95%;
 
-input:focus {
-    border-color: #6a11cb;
 }
-
-button {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #fff;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+#login{
+    color: white;
 }
-
-button:hover {
-    background: linear-gradient(to right, #2575fc, #6a11cb);
-}
-
-.signup-text {
-    margin-top: 15px;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.signup-text a {
-    color: #6a11cb;
+a{
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    color: rgb(166, 76, 176);
 }
-
-.signup-text a:hover {
-    color: #2575fc;
+button{
+    padding: 10px;
+    font-size: 16px;
+    background: linear-gradient(to right, #5e2898, #0b4cbe);
+    transition: background 0.3s ease;
+    color: white ;
+    border: none;
+    cursor: pointer;
+    margin: 24px;
+    border-radius: 5px;
+    width: 60%;
+    text-align: center;
+}
+button:hover{
+    background-color: #0056b3;
+}
+button:active{
+    transition: button 5s ease;
 }
