@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification Panel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .notification-panel {
+      width: 90%;
+      max-width: 600px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .panel-header {
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      padding: 15px;
+      color: #fff;
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .notification {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .notification:last-child {
+      border-bottom: none;
+    }
+
+    .notification p {
+      margin: 0;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .notification .timestamp {
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    .clear-all {
+      text-align: center;
+      padding: 10px;
+      background: #f0f0f0;
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+      transition: background 0.3s ease;
+    }
+
+    .clear-all:hover {
+      background: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="notification-panel">
+    <div class="panel-header">Notifications</div>
+    <div class="notification">
+      <p>Assignment submission deadline is tomorrow.</p>
+      <span class="timestamp">10:30 AM</span>
+    </div>
+    <div class="notification">
+      <p>Your attendance for today has been marked.</p>
+      <span class="timestamp">9:00 AM</span>
+    </div>
+    <div class="notification">
+      <p>New course material has been uploaded.</p>
+      <span class="timestamp">Yesterday</span>
+    </div>
+    <div class="notification">
+      <p>Exam schedule for next week is available.</p>
+      <span class="timestamp">2 days ago</span>
+    </div>
+    <div class="clear-all" onclick="clearNotifications()">Clear All</div>
+  </div>
+
+  <script>
+    function clearNotifications() {
+      const panel = document.querySelector('.notification-panel');
+      panel.innerHTML = `
+        <div class="panel-header">Notifications</div>
+        <div style="text-align: center; padding: 20px; font-size: 1.2em; color: #888;">No new notifications</div>
+      `;
+    }
+  </script>
+</body>
+</html>

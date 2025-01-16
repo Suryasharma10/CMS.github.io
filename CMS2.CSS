@@ -25,6 +25,9 @@ i{
   position: relative;
   height: 800px;
 } 
+.sidebar-content a{
+  color: white;
+}
 .sidebar:hover {
   width: 300px;
 }
